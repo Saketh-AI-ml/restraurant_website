@@ -197,13 +197,3 @@ app.post('/api/notifications/whatsapp', async (req, res) => {
   }
 });
 ```
-
-Deploying this unlocks automatic, instant background alerts directly on customers' lockscreens whenever the chef marks their tikka as "Preparing" or "Out for Delivery"!
-
----
-
-## 💰 How to Sell This as a High-Margin SaaS Template
-- **Target Audience**: Mid-tier family restaurants currently struggling on food tech portals.
-- **Pain Point Pitch**: "You are paying up to ₹25,000 to ₹100,000 every single year in commission markups. Let's redirect that cash directly back into your margins using your own brand portal."
-- **Pricing Strategy**: Charge a tiny setup installment of ₹15,000 (about $200) followed by a ₹999 ($15) monthly maintenance cloud hosting fee. 
-- **ROI Metric**: Getting merely **1 direct order every 2 days** completely covers the maintenance overhead inside week 1!
