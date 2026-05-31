@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-burgundy: #7B1D1D;
+  --color-burgundy-light: #9B2D2D;
+  --color-burgundy-dark: #5A1414;
+  --color-gold: #F5A623;
+  --color-gold-light: #FFB73A;
+  --color-cream: #FFF8F0;
+  --color-cream-dark: #F5ECD8;
+  
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+/* Base custom styles to represent elegant, responsive craft and high-fidelity feel */
+body {
+  background-color: #FFF8F0;
+  color: #2D2320;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Dark mode overrides for background and base text colors */
+.dark body {
+  background-color: #120C0A;
+  color: #FFF8F0;
+}
+
+/* Smooth custom scrollbars for elegant editorial design */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #E5D9CC;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F5A623;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #2D2421;
+}
+
+/* Skeleton shimmer anims */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton-box {
+  background: linear-gradient(90deg, #F5ECD8 25%, #E5D9CC 50%, #F5ECD8 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+}
+
+.dark .skeleton-box {
+  background: linear-gradient(90deg, #2D2320 25%, #3F302C 50%, #2D2320 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+}
+
+/* Elegant CSS utility structures */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+/* Glass panel */
+.glass-panel {
+  background-color: rgba(255, 248, 240, 0.85);
+  backdrop-filter: blur(8px);
+}
+.dark .glass-panel {
+  background-color: rgba(18, 12, 10, 0.9);
+  backdrop-filter: blur(8px);
+}

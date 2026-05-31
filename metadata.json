@@ -1,0 +1,6 @@
+{
+  "name": "Spice & Soul Kitchen",
+  "description": "A high-performance premium restaurant website and online ordering system with zero middlemen commission, customer loyalty points, menu management, and direct admin order tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
